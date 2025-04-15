@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: linear-gradient(rgb(82, 178, 242), rgb(147, 0, 180));
+}
+.navBar {
+  position: sticky;
+  background-color: rgb(80, 0, 102);
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navBar a {
+  display: inline;
+  color: white;
+  float: left;
+  display: block;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background 0.3s ease-in-out;
+}
+
+.navBar a:hover {
+  background-color: rgb(111, 0, 142); /* Darker blue on hover */
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.leftHalf {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftHalf a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: rgb(125, 0, 167);
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+.leftHalf a:hover {
+  background-color: rgb(154, 0, 205);
+}
+
+.rightHalf {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightHalf img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+#schedule .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#schedule h1 {
+  padding: 20px;
+  font-size: 1.75em;
+  color: white;
+}
+#schedule p {
+  padding: 20px;
+  color: white;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+
+  width: 100%;
+  max-height: 30px;
+}
+.day {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+}
+.timeframe {
+  margin-top: 10px;
+
+  color: #555;
+}
+
+#clipsContent .container {
+  height: 50vh;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
