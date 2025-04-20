@@ -1,5 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
 import "./styles/music.css";
 import { Link } from "react-router-dom";
 import Corporate from "../assets/corporate.mp3";
@@ -14,7 +17,11 @@ const Music = () => {
       </nav>
 
       {/* Work Examples Section */}
+<<<<<<< HEAD
       <section className="examples">
+=======
+      <section id="examples">
+>>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
         <h1>My Work!</h1>
         <div className="container">
           <div className="leftHalf">
@@ -36,7 +43,11 @@ const Music = () => {
       </section>
 
       {/* Ko-fi & Twitch Section */}
+<<<<<<< HEAD
       <section className="kofi">
+=======
+      <section id="kofi">
+>>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
         <div className="container">
           <div className="leftHalf">
             <h2>Commissions and Donations</h2>
