@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./styles/music.css";
 import { Link } from "react-router-dom";
 import Corporate from "../assets/corporate.mp3";
@@ -13,7 +14,7 @@ const Music = () => {
       </nav>
 
       {/* Work Examples Section */}
-      <section id="examples">
+      <section className="examples">
         <h1>My Work!</h1>
         <div className="container">
           <div className="leftHalf">
@@ -35,7 +36,7 @@ const Music = () => {
       </section>
 
       {/* Ko-fi & Twitch Section */}
-      <section id="kofi">
+      <section className="kofi">
         <div className="container">
           <div className="leftHalf">
             <h2>Commissions and Donations</h2>

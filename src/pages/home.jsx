@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/home.css";
+
 import { Link } from "react-router-dom";
 import Headshot from "../assets/theo_pro_headshot_384x577.jpg";
 import theoBlink from "../assets/TheoBlink1.jpg";
@@ -22,7 +22,5 @@ const Home = () => {
     </div>
   );
 };
-
-console.log("Home component loaded");
 
 export default Home;

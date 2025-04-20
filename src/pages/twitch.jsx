@@ -6,13 +6,14 @@ const Twitch = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="navBar">
-        <Link to="/twitch">Twitch</Link>
-        <Link to="/music">Music</Link>
-      </nav>
-
+      <section className="nav">
+        <nav className="navBar">
+          <Link to="/twitch">Twitch</Link>
+          <Link to="/music">Music</Link>
+        </nav>
+      </section>
       {/* About Section */}
-      <section id="about">
+      <section className="about">
         <div className="container">
           <div className="leftHalf">
             <a
@@ -30,7 +31,7 @@ const Twitch = () => {
       </section>
 
       {/* Twitch Clip Section */}
-      <section id="clipsContent">
+      <section className="clipsContent">
         <div className="container">
           <div className="leftHalf">
             <iframe
@@ -45,7 +46,7 @@ const Twitch = () => {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule">
+      <section className="schedule">
         <div className="container">
           <h1>Schedule</h1>
           <p>Subject to Change</p>

@@ -6,6 +6,7 @@ import Creativity from "./pages/creativity";
 import Professional from "./pages/Professional";
 import Twitch from "./pages/twitch";
 import Music from "./pages/music";
+import noPage from "./pages/not_found";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/professional" element={<Professional />} />
         <Route path="/twitch" element={<Twitch />} />
         <Route path="/music" element={<Music />} />
+        <Route path="*" element={<noPage />} />
       </Routes>
     </Router>
   );

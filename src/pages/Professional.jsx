@@ -11,7 +11,7 @@ const Professional = () => {
         <a href="#contact">Contact</a>
       </nav>
 
-      <section id="about">
+      <section className="about" id="about">
         <div className="container">
           <div className="leftHalf">
             <div className="headshot">
@@ -34,7 +34,7 @@ const Professional = () => {
         </div>
       </section>
 
-      <section id="education">
+      <section className="education" id="education">
         <div className="container">
           <div className="leftHalf">
             <h1 className="textH1">Skills</h1>
@@ -56,7 +56,7 @@ const Professional = () => {
         </div>
       </section>
 
-      <section id="contact">
+      <section className="contact" id="contact">
         <div className="container">
           <ul id="contactList">
             <li>
@@ -69,7 +69,7 @@ const Professional = () => {
               </a>
             </li>
             <li>
-              <a href="#contact">Contact Me!</a>
+              <a href="#getInTouch">Contact Me!</a>
             </li>
             <li>
               <a href="#projects">Previous Work</a>
