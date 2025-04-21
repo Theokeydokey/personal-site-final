@@ -1,9 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-
-=======
-import "./styles/home.css";
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
 import { Link } from "react-router-dom";
 import Headshot from "../assets/theo_pro_headshot_384x577.jpg";
 import theoBlink from "../assets/TheoBlink1.jpg";
@@ -27,9 +22,4 @@ const Home = () => {
   );
 };
 
-<<<<<<< HEAD
-=======
-console.log("Home component loaded");
-
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
 export default Home;

@@ -11,11 +11,7 @@ const Professional = () => {
         <a href="#contact">Contact</a>
       </nav>
 
-<<<<<<< HEAD
       <section className="about" id="about">
-=======
-      <section id="about">
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
         <div className="container">
           <div className="leftHalf">
             <div className="headshot">
@@ -38,11 +34,7 @@ const Professional = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
       <section className="education" id="education">
-=======
-      <section id="education">
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
         <div className="container">
           <div className="leftHalf">
             <h1 className="textH1">Skills</h1>
@@ -64,11 +56,7 @@ const Professional = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
       <section className="contact" id="contact">
-=======
-      <section id="contact">
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
         <div className="container">
           <ul id="contactList">
             <li>
@@ -81,11 +69,7 @@ const Professional = () => {
               </a>
             </li>
             <li>
-<<<<<<< HEAD
               <a href="#getInTouch">Contact Me!</a>
-=======
-              <a href="#contact">Contact Me!</a>
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
             </li>
             <li>
               <a href="#projects">Previous Work</a>

@@ -1,38 +1,12 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-=======
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
 }
 
 body {
   margin: 0;
-<<<<<<< HEAD
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -155,9 +129,40 @@ body {
   object-fit: cover;
   border-radius: 5%;
 }
+.creativityHead {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.edu {
+  line-height: 70px;
+}
+.eduP {
+  line-height: 40px;
+}
+h1 {
+  padding: 25px;
+  color: White;
+}
+
+.examples h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+h2 {
+  padding: 10px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
 
 /* For mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .container {
     flex-direction: column;
     padding-top: 10px;
@@ -166,47 +171,42 @@ body {
   .half {
     width: 100%;
     margin-bottom: 20px;
-=======
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
+  .rightHalf {
+    width: 100%;
+    margin: 20px 0;
   }
-  button {
-    background-color: #f9f9f9;
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
+
+  .rightHalf img {
+    max-height: 300px; /* Limit height on mobile */
+  }
+  .creativityHead {
+    margin-top: 20px;
+    font-size: calc(1.2rem + 1vw); /* Responsive font size */
+    text-align: center;
+  }
+
+  a,
+  .textH1,
+  h2,
+  h3,
+  .kofi h2,
+  .kofi a {
+    text-align: center;
+  }
+  .edu,
+  .eduP {
+    text-align: center;
+    line-height: 40px;
+  }
+  #contactList {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #contactList a {
+    width: 200px; /* You can use a consistent width for mobile too */
+    height: 50px;
   }
 }

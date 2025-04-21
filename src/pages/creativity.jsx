@@ -1,9 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-
-=======
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
 import "./styles/creativity.css"; // Import the CSS file
 import twitchLogo from "../assets/twitch.jpg";
 import treble from "../assets/treble.jpg";
@@ -15,11 +11,7 @@ const Creativity = () => {
 
   return (
     <div>
-<<<<<<< HEAD
       <header className="creativityHead">
-=======
-      <header>
->>>>>>> 6e6737261f42a895ed676e87d09ad0a544fc7def
         <h1>Theokeydokey</h1>
       </header>
       <div className="container">
