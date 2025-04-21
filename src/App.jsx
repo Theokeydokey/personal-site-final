@@ -1,6 +1,6 @@
 // App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Creativity from "./pages/creativity";
 import Professional from "./pages/Professional";
@@ -10,7 +10,7 @@ import noPage from "./pages/not_found";
 
 function App() {
   return (
-    <Router>
+    <Router baseline="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/creativity" element={<Creativity />} />
