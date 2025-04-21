@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(rgb(82, 178, 242), white) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.half {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.half h1 {
+  margin-top: 15px;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  background-color: rgb(129, 205, 255);
+}
+
+.half img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Reduced height */
+  object-fit: contain;
+  border-radius: 5%;
+  transition: transform 0.3s ease;
+}
+
+.half img:hover {
+  transform: scale(1.2);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 20px; /* optional spacing */
+  padding-top: 40px;
+}
+
+.navBar {
+  position: sticky;
+  background-color: rgb(0, 59, 98);
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navBar a {
+  display: inline;
+  color: white;
+  float: left;
+  display: block;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background 0.3s ease-in-out;
+}
+
+.navBar a:hover {
+  background-color: rgb(0, 96, 160);
+}
+
+.leftHalf {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rightHalf {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leftHalf a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: rgb(129, 205, 255);
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+.leftHalf a:hover {
+  background-color: rgb(63, 178, 255);
+}
+.rightHalf a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: rgb(129, 205, 255);
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+.rightHalf a:hover {
+  background-color: rgb(63, 178, 255);
+}
+
+.rightHalf img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.creativityHead {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.edu {
+  line-height: 70px;
+}
+.eduP {
+  line-height: 40px;
+}
+h1 {
+  padding: 25px;
+  color: White;
+}
+
+.examples h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+h2 {
+  padding: 10px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 930px) {
+  .container {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .half {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .rightHalf {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .rightHalf img {
+    max-height: 300px; /* Limit height on mobile */
+  }
+  .creativityHead {
+    margin-top: 20px;
+    font-size: calc(1.2rem + 1vw); /* Responsive font size */
+    text-align: center;
+  }
+
+  a,
+  .textH1,
+  h2,
+  h3,
+  .kofi h2,
+  .kofi a {
+    text-align: center;
+  }
+  .edu,
+  .eduP {
+    text-align: center;
+    line-height: 40px;
+  }
+  #contactList {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #contactList a {
+    width: 200px; /* You can use a consistent width for mobile too */
+    height: 50px;
+  }
+}

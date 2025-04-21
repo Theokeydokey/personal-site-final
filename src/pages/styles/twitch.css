@@ -1,0 +1,91 @@
+.rightHalf {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightHalf img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.schedule .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.schedule h1 {
+  padding: 20px;
+  font-size: 1.75em;
+  color: rgb(0, 0, 0);
+}
+.schedule p {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-height: 30px;
+}
+
+.day {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+}
+.timeframe {
+  margin-top: 10px;
+
+  color: #555;
+}
+
+.clipsContent .container {
+  height: 50vh;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9; /* Maintains video aspect ratio */
+}
+
+@media (max-width: 926px) {
+  .calendar {
+    grid-template-columns: repeat(3, 1fr); /* Show 3 days per row on mobile */
+    gap: 8px;
+  }
+
+  .day {
+    padding: 10px;
+    font-size: 1em;
+  }
+  .schedule h1 {
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .schedule p {
+    padding: 15px;
+    font-size: 0.95em;
+    text-align: center;
+  }
+  .clipsContent .container {
+    height: auto;
+    min-height: 40vh;
+  }
+}
