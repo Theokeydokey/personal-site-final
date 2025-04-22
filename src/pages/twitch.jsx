@@ -35,7 +35,7 @@ const Twitch = () => {
         <div className="container">
           <div className="leftHalf">
             <iframe
-              src="https://clips.twitch.tv/embed?clip=ManlyStrangeKimchiPermaSmug&parent=theo-housinger.onrender.com"
+              src="https://clips.twitch.tv/embed?clip=VastCalmSpindleDatSheffy&parent=theo-housinger.onrender.com"
               width="640"
               height="360"
               allowFullScreen
