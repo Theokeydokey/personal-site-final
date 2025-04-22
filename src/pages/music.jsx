@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/music.css";
+
 import { Link } from "react-router-dom";
 import Corporate from "../assets/corporate.mp3";
 import Wonder from "../assets/Wonder.mp3";
@@ -19,7 +19,10 @@ const Music = () => {
           <div className="leftHalf">
             <h3>Wonder</h3>
             <audio controls>
-              <source src={Wonder} type="audio/mp3" />
+              <source
+                src={Wonder}
+                type="audio/mp3" /*fetch audio asset, if not, tell user */
+              />
               Your browser does not support the audio element.
             </audio>
           </div>

@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./styles/creativity.css"; // Import the CSS file
+
 import twitchLogo from "../assets/twitch.jpg";
 import treble from "../assets/treble.jpg";
 const Creativity = () => {
   useEffect(() => {
-    // Perform any logic that would typically be in your JavaScript file
     console.log("Creativity component has been mounted.");
   }, []);
 

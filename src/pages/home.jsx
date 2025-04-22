@@ -8,7 +8,7 @@ const Home = () => {
     <div className="container">
       <div className="half">
         <Link to="/Professional">
-          <img src={Headshot} alt="Web Developer" />
+          <img src={Headshot} alt="Web Developer" /* clickable images */ />
         </Link>
         <h1>Web Developer</h1>
       </div>

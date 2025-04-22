@@ -34,7 +34,7 @@ const Twitch = () => {
       <section className="clipsContent">
         <div className="container">
           <div className="leftHalf">
-            <iframe
+            <iframe /*clip integration */
               src="https://clips.twitch.tv/embed?clip=VastCalmSpindleDatSheffy&parent=theo-housinger.onrender.com"
               width="640"
               height="360"
@@ -52,6 +52,7 @@ const Twitch = () => {
           <p>Subject to Change</p>
           <div className="calendar">
             {[
+              /*calendar day selection */
               { day: "Monday", time: "18:00 - 21:00" },
               { day: "Tuesday", time: "Day Off" },
               { day: "Wednesday", time: "18:00 - 21:00" },
