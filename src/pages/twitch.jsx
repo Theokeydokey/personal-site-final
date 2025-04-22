@@ -35,7 +35,7 @@ const Twitch = () => {
         <div className="container">
           <div className="leftHalf">
             <iframe
-              src="https://www.twitch.tv/theokeydokey/clip/ManlyStrangeKimchiPermaSmug-e1JBi9cqX16W6OFp?filter=clips&range=all&sort=time"
+              src="https://clips.twitch.tv/embed?clip=ManlyStrangeKimchiPermaSmug&parent=https://theo-housinger.onrender.com/twitch"
               width="640"
               height="360"
               allowFullScreen
