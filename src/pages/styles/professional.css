@@ -73,7 +73,7 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgb(82, 178, 242);
+  background-color: rgb(0, 59, 98);
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -86,5 +86,19 @@
 }
 
 #contactList a:hover {
-  background-color: #005bb5; /* Darker blue on hover */
+  background-color: rgb(0, 96, 160); /* Lighter blue on hover */
+}
+
+.weatherBox {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+.weatherBox img {
+  width: 64px;
+  height: 64px;
 }

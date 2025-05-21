@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/professional.css";
+import axios from "axios";
 import Headshot from "../assets/theo_pro_headshot_384x577.jpg";
 
 const Professional = () => {
+  const [weather, setWeather] = useState(null);
+  useEffect(() => {
+    const fetchWeather = async () => {
+      try {
+        const response = await axios.get(
+          "http://api.weatherstack.com/current",
+          {
+            params: {
+              access_key: import.meta.env.VITE_WEATHERSTACK_API_KEY,
+              query: "Dublin",
+            },
+          }
+        );
+        console.log("Weather API response:", response.data);
+        setWeather(response.data);
+      } catch (error) {
+        console.error("Weather fetch failed:", error);
+      }
+    };
+
+    fetchWeather();
+  }, []);
   return (
     <>
       <nav className="navBar">
@@ -55,7 +78,19 @@ const Professional = () => {
           </div>
         </div>
       </section>
-
+      <section className="exampleWeather" id="exampleWeather">
+        <div className="container">
+          {weather && weather.success !== false ? (
+            <div>
+              <h2>Weather in {weather.location.name}</h2>
+              <p>Temperature: {weather.current.temperature}°C</p>
+              <p>Condition: {weather.current.weather_descriptions[0]}</p>
+            </div>
+          ) : (
+            <p>Unable to fetch weather data. Please try again later.</p>
+          )}
+        </div>
+      </section>
       <section className="contact" id="contact">
         <div className="container">
           <ul id="contactList">
