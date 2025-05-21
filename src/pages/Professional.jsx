@@ -81,10 +81,19 @@ const Professional = () => {
       <section className="exampleWeather" id="exampleWeather">
         <div className="container">
           {weather && weather.success !== false ? (
-            <div>
-              <h2>Weather in {weather.location.name}</h2>
-              <p>Temperature: {weather.current.temperature}°C</p>
-              <p>Condition: {weather.current.weather_descriptions[0]}</p>
+            <div className="weatherSegment">
+              <h2 className="weatherName">
+                Weather in {weather.location.name}
+              </h2>
+              <p className="weatherText">
+                Temperature: {weather.current.temperature}°C
+              </p>
+              <p className="weatherText">
+                Condition: {weather.current.weather_descriptions[0]}
+              </p>
+              <p className="weatherText">
+                Local Date and Time: {weather.location.localtime}
+              </p>
             </div>
           ) : (
             <p>Unable to fetch weather data. Please try again later.</p>
