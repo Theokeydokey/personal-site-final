@@ -9,7 +9,7 @@ const Professional = () => {
     const fetchWeather = async () => {
       try {
         const response = await axios.get(
-          "http://api.weatherstack.com/current",
+          "https://api.weatherstack.com/current",
           {
             params: {
               access_key: import.meta.env.VITE_WEATHERSTACK_API_KEY,
