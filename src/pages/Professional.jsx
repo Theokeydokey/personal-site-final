@@ -8,12 +8,15 @@ const Professional = () => {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const baseURL =
-          import.meta.env.MODE === "development"
-            ? "http://localhost:3001"
-            : import.meta.env.VITE_BACKEND_URL;
-
-        const response = await axios.get(`${baseURL}/api/weather?city=Dublin`);
+        const response = await axios.get(
+          "http://api.weatherstack.com/current",
+          {
+            params: {
+              access_key: import.meta.env.VITE_WEATHERSTACK_API_KEY,
+              query: "Dublin",
+            },
+          }
+        );
         console.log("Weather API response:", response.data);
         setWeather(response.data);
       } catch (error) {
