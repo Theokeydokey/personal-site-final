@@ -3,21 +3,19 @@ import "./styles/professional.css";
 import axios from "axios";
 import Headshot from "../assets/theo_pro_headshot_384x577.jpg";
 
+const baseURL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:3001"
+    : "https://personal-site-final.onrender.com";
+
 const Professional = () => {
   const [weather, setWeather] = useState(null);
+
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const response = await axios.get(
-          "https://api.weatherstack.com/current",
-          {
-            params: {
-              access_key: import.meta.env.VITE_WEATHERSTACK_API_KEY,
-              query: "Dublin",
-            },
-          }
-        );
-        console.log("Weather API response:", response.data);
+        const response = await axios.get(`${baseURL}/api/weather?city=Dublin`);
+        console.log("Backend weather response:", response.data);
         setWeather(response.data);
       } catch (error) {
         console.error("Weather fetch failed:", error);
