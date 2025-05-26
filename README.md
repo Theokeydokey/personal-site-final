@@ -29,4 +29,38 @@ If you are developing a production application, we recommend using TypeScript an
 
 This React-based personal webpage serves as a professional showcase of my skills as both a web developer and a content creator. Designed with clarity and functionality in mind, the site provides visitors—particularly instructors and evaluators—with an interactive overview of my technical abilities, creative projects, and digital presence.
 
-Built using ReactJS and react-router-dom for smooth navigation, the application integrates the Twitch Clip API to dynamically display highlights from my content creation work. This project reflects my passion for both coding and media production, and demonstrates how I can merge these two worlds through modern web technologies.
+Built using vite ReactJS and react-router-dom for smooth navigation, the application integrates the Twitch Clip API to dynamically display highlights from my content creation work. This project reflects my passion for both coding and media production, and demonstrates how I can merge these two worlds through modern web technologies.
+
+Theo Housinger Professional/Content site
+Launched on render.com as a static site with a proxy server web service supporting WeatherStack restAPI
+
+This site can be used to both learn about me as a professional, and what I can bring to the table as an employee, as well as showcase my creativity and skills in that sphere.
+
+---
+
+Deployment on render.com:
+
+Backend Web Service
+from repository https://github.com/Theokeydokey/personal-site-final
+
+Branch: main
+
+root directory: server
+build command: $npm install
+start command: node server.js
+
+Static Site
+from repository https://github.com/Theokeydokey/personal-site-final
+
+branch: main
+
+root directory: client
+build command: npm run build
+publish directory: dist
+
+---
+
+Features:
+WeatherStack API live weather and time in Dublin Ireland
+Twitch.tv clips
+Music clips

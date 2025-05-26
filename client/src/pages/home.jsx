@@ -9,14 +9,14 @@ const Home = () => {
       <div className="half">
         <Link to="/Professional">
           <img src={Headshot} alt="Web Developer" /* clickable images */ />
+          <h1>Web Developer</h1>{" "}
         </Link>
-        <h1>Web Developer</h1>
       </div>
       <div className="half">
         <Link to="/creativity">
           <img src={theoBlink} alt="Content Creator" />
+          <h1>Content Creator</h1>{" "}
         </Link>
-        <h1>Content Creator</h1>
       </div>
     </div>
   );
