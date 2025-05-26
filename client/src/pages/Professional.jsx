@@ -57,21 +57,27 @@ const Professional = () => {
 
       <section className="education" id="education">
         <div className="container">
-          <h1 className="textH1">Education</h1>
-          <h2 className="edu">BFA in Musical Theatre</h2>
-          <p className="eduP">American College Dublin</p>
-          <h2 className="edu">
-            Professional Certificate in Front-End Web Development
-          </h2>
-          <p className="eduP">University College Dublin Professional Academy</p>
+          <div className="leftHalf">
+            <h1 className="textH1">Education</h1>
+            <h2 className="edu">BFA in Musical Theatre</h2>
+            <p className="eduP">American College Dublin</p>
+            <h2 className="edu">
+              Professional Certificate in Front-End Web Development
+            </h2>
+            <p className="eduP">
+              University College Dublin Professional Academy
+            </p>
+          </div>
         </div>
       </section>
       <section className="skills">
         <div className="container">
-          <h1 className="textH1">Skills</h1>
-          <h2>Public Speaking</h2>
-          <h2>Team Management</h2>
-          <h2>HTML • CSS • JavaScript • Bootstrap • ReactJS</h2>
+          <div className="rightHalf">
+            <h1 className="textH1">Skills</h1>
+            <h2>Public Speaking</h2>
+            <h2>Team Management</h2>
+            <h2>HTML • CSS • JavaScript • Bootstrap • ReactJS</h2>
+          </div>
         </div>
       </section>
       <section className="exampleWeather" id="exampleWeather">
