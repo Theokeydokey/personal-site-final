@@ -29,6 +29,7 @@ const Professional = () => {
       <nav className="navBar">
         <a href="#about">About me</a>
         <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -70,7 +71,7 @@ const Professional = () => {
           </div>
         </div>
       </section>
-      <section className="skills">
+      <section className="skills" id="skills">
         <div className="container">
           <div className="rightHalf">
             <h1 className="textH1">Skills</h1>
