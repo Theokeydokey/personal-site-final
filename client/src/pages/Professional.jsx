@@ -40,18 +40,16 @@ const Professional = () => {
             </div>
           </div>
           <div className="rightHalf">
-            <div className="aboutMe">
-              <div className="textH1">
-                <h1>About me</h1>
-              </div>
-              <div className="textP">
-                <p>
-                  Theo is a beginner front-end web developer looking to further
-                  their knowledge and skillset through experience and
-                  application. They enjoy the challenge of diving into new tasks
-                  and integrating themselves with teams of new people.
-                </p>
-              </div>
+            <div className="textH1">
+              <h1>About me</h1>
+            </div>
+            <div className="textP">
+              <p>
+                Theo is a beginner front-end web developer looking to further
+                their knowledge and skillset through experience and application.
+                They enjoy the challenge of diving into new tasks and
+                integrating themselves with teams of new people.
+              </p>
             </div>
           </div>
         </div>
@@ -59,27 +57,21 @@ const Professional = () => {
 
       <section className="education" id="education">
         <div className="container">
-          <div className="leftHalf">
-            <h1 className="textH1">Education</h1>
-            <h2 className="edu">BFA in Musical Theatre</h2>
-            <p className="eduP">American College Dublin</p>
-            <h2 className="edu">
-              Professional Certificate in Front-End Web Development
-            </h2>
-            <p className="eduP">
-              University College Dublin Professional Academy
-            </p>
-          </div>
+          <h1 className="textH1">Education</h1>
+          <h2 className="edu">BFA in Musical Theatre</h2>
+          <p className="eduP">American College Dublin</p>
+          <h2 className="edu">
+            Professional Certificate in Front-End Web Development
+          </h2>
+          <p className="eduP">University College Dublin Professional Academy</p>
         </div>
       </section>
       <section className="skills">
         <div className="container">
-          <div className="rightHalf">
-            <h1 className="textH1">Skills</h1>
-            <h2>Public Speaking</h2>
-            <h2>Team Management</h2>
-            <h2>HTML • CSS • JavaScript • Bootstrap • ReactJS</h2>
-          </div>
+          <h1 className="textH1">Skills</h1>
+          <h2>Public Speaking</h2>
+          <h2>Team Management</h2>
+          <h2>HTML • CSS • JavaScript • Bootstrap • ReactJS</h2>
         </div>
       </section>
       <section className="exampleWeather" id="exampleWeather">
