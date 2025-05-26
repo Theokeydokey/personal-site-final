@@ -17,14 +17,14 @@ const Creativity = () => {
         <div className="half">
           <Link to="/twitch">
             <img src={twitchLogo} alt="Twitch" className="twitch-img" />
+            <h1>Twitch</h1>{" "}
           </Link>
-          <h1>Twitch</h1>
         </div>
         <div className="half">
           <Link to="/music">
             <img src={treble} alt="Music" className="music-img" />
+            <h1>Music</h1>{" "}
           </Link>
-          <h1>Music</h1>
         </div>
       </div>
     </div>
