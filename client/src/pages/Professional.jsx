@@ -4,7 +4,8 @@ import axios from "axios";
 import Headshot from "../assets/theo_pro_headshot_384x577.jpg";
 
 const baseURL =
-  import.meta.env.MODE === "development"
+  import.meta.env.MODE ===
+  "development" /*call API from .env to hide key from users*/
     ? "http://localhost:3001"
     : "https://personal-site-final.onrender.com";
 
@@ -14,7 +15,9 @@ const Professional = () => {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const response = await axios.get(`${baseURL}/api/weather?city=Dublin`);
+        const response = await axios.get(
+          `${baseURL}/api/weather?city=Dublin`
+        ); /* fetch dublin weather, if not able, display fail message in console*/
         console.log("Backend weather response:", response.data);
         setWeather(response.data);
       } catch (error) {
@@ -99,7 +102,9 @@ const Professional = () => {
               </p>
             </div>
           ) : (
-            <p>Unable to fetch weather data. Please try again later.</p>
+            <p>
+              Unable to fetch weather data. Please try again later.
+            </p> /*fail message*/
           )}
         </div>
       </section>

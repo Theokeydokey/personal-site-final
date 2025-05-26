@@ -8,7 +8,10 @@ const Home = () => {
     <div className="container">
       <div className="half">
         <Link to="/Professional">
-          <img src={Headshot} alt="Web Developer" /* clickable images */ />
+          <img
+            src={Headshot}
+            alt="Web Developer" /* clickable images and titles */
+          />
           <h1>Web Developer</h1>{" "}
         </Link>
       </div>

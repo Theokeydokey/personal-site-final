@@ -1,82 +1,93 @@
+/* Reset default browser styles and set global font */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; /* Ensures padding/border are included in total width/height */
+  font-family: Arial, Helvetica, sans-serif; /* Sets a clean, sans-serif font globally */
 }
 
+/* Basic body setup: flex layout, full viewport height, and gradient background */
 body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background: linear-gradient(rgb(82, 178, 242), white) fixed;
+  min-height: 100vh; /* Ensures body covers at least the full height of the viewport */
+  background: linear-gradient(rgb(82, 178, 242), white) fixed; /* Top-to-bottom gradient */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Shared styling for elements taking half screen width */
 .half {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center children horizontally */
   text-align: center;
   padding: 10px;
 }
 
+/* Styling for headers inside .half elements */
 .half h1 {
   margin-top: 15px;
   font-size: 1.8rem;
   border-radius: 20px;
-  background-color: rgb(0, 59, 98);
+  background-color: rgb(0, 59, 98); /* Deep blue background */
 }
 
+/* Image styling inside .half elements */
 .half img {
-  max-width: 100%;
+  max-width: 100%; /* Responsive width */
   height: auto;
-  max-height: 400px; /* Reduced height */
-  object-fit: contain;
-  border-radius: 5%;
-  transition: transform 0.3s ease;
+  max-height: 400px; /* Limit height */
+  object-fit: contain; /* Keep full image visible */
+  border-radius: 5%; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover animation */
 }
 
+/* Zoom effect on image hover */
 .half img:hover {
   transform: scale(1.2);
 }
+
+/* Container to hold both left and right halves */
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Side-by-side layout */
   justify-content: center;
-
-  margin-top: 20px; /* optional spacing */
+  margin-top: 20px;
   padding-top: 40px;
 }
 
+/* Sticky navigation bar styling */
 .navBar {
-  position: sticky;
+  position: sticky; /* Sticks to top on scroll */
   background-color: rgb(0, 59, 98);
   top: 0;
   overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Even spacing of nav items */
 }
+
+/* Nav link styles */
 .navBar a {
-  display: inline;
   color: white;
   float: left;
   display: block;
-
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out; /* Smooth hover transition */
 }
 
+/* Nav link hover effect */
 .navBar a:hover {
   background-color: rgb(0, 96, 160);
 }
 
+/* Left half layout setup */
 .leftHalf {
   width: 50%;
   height: 100%;
@@ -85,6 +96,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+/* Right half layout setup */
 .rightHalf {
   width: 50%;
   height: 100%;
@@ -94,10 +107,11 @@ body {
   flex-direction: column;
 }
 
+/* Left half button link styling */
 .leftHalf a {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px;
   background-color: rgb(0, 59, 98);
   color: white;
   text-decoration: none;
@@ -105,13 +119,17 @@ body {
   font-weight: bold;
   transition: background 0.3s ease-in-out;
 }
+
+/* Left half button hover */
 .leftHalf a:hover {
   background-color: rgb(0, 96, 160);
 }
+
+/* Right half button styling (same as left) */
 .rightHalf a {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px;
   background-color: rgb(0, 59, 98);
   color: white;
   text-decoration: none;
@@ -119,33 +137,44 @@ body {
   font-weight: bold;
   transition: background 0.3s ease-in-out;
 }
+
+/* Right half button hover */
 .rightHalf a:hover {
   background-color: rgb(0, 96, 160);
 }
 
+/* Right half image styling */
 .rightHalf img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Cover container while preserving aspect ratio */
   border-radius: 5%;
 }
+
+/* Header for creativity section */
 .creativityHead {
   margin-top: 20px;
   text-align: center;
   font-size: 2em;
 }
 
+/* Spacing for educational content */
 .edu {
   line-height: 70px;
 }
+
+/* Spacing for educational paragraph */
 .eduP {
   line-height: 40px;
 }
+
+/* General h1 styling */
 h1 {
   padding: 25px;
-  color: White;
+  color: white;
 }
 
+/* Centered, large title in examples section */
 .examples h1 {
   align-items: center;
   display: flex;
@@ -153,18 +182,20 @@ h1 {
   font-size: 3em;
 }
 
+/* Padding for h2 headings */
 h2 {
   padding: 10px;
 }
 
+/* Padding below h3 headings */
 h3 {
   padding-bottom: 10px;
 }
 
-/* For mobile responsiveness */
+/* Responsive design for screens smaller than 1305px */
 @media (max-width: 1305px) {
   .container {
-    flex-direction: column;
+    flex-direction: column; /* Stack content vertically */
     padding-top: 10px;
   }
 
@@ -172,20 +203,23 @@ h3 {
     width: 100%;
     margin-bottom: 20px;
   }
+
   .rightHalf {
     width: 100%;
     margin: 20px 0;
   }
 
   .rightHalf img {
-    max-height: 300px; /* Limit height on mobile */
+    max-height: 300px; /* Reduce image height for small screens */
   }
+
   .creativityHead {
     margin-top: 20px;
-    font-size: calc(1.2rem + 1vw); /* Responsive font size */
+    font-size: calc(1.2rem + 1vw); /* Font size scales with screen */
     text-align: center;
   }
 
+  /* Center text elements on small screens */
   a,
   .textH1,
   h2,
@@ -194,19 +228,24 @@ h3 {
   .kofi a {
     text-align: center;
   }
+
+  /* Center and reduce line spacing for education section */
   .edu,
   .eduP {
     text-align: center;
     line-height: 40px;
   }
+
+  /* Adjust contact list layout for mobile */
   #contactList {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
+  /* Standardize size of contact links on mobile */
   #contactList a {
-    width: 200px; /* You can use a consistent width for mobile too */
+    width: 200px;
     height: 50px;
   }
 }

@@ -16,7 +16,11 @@ const Creativity = () => {
       <div className="container">
         <div className="half">
           <Link to="/twitch">
-            <img src={twitchLogo} alt="Twitch" className="twitch-img" />
+            <img
+              src={twitchLogo}
+              alt="Twitch"
+              className="twitch-img" /*clickable images and titles*/
+            />
             <h1>Twitch</h1>{" "}
           </Link>
         </div>
