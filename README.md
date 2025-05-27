@@ -60,9 +60,39 @@ root directory: client
 build command: npm run build
 publish directory: dist
 
+Add Redirect/Rewrite:
+Source: /\*
+Destination: /index.html
+Action: rewrite
+
 ---
 
 Features:
 WeatherStack API live weather and time in Dublin Ireland
 Twitch.tv clips
 Music clips
+
+---
+
+Lighthouse reports:
+Mobile:
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com/ncpojcac75?form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-Professional/843urgxrc8?form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-creativity/p2qs7232g5?form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-twitch/laxhr92stc?form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-music/3qn12qeosl?form_factor=mobile
+
+Desktop:
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com/ncpojcac75?form_factor=desktop
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-Professional/843urgxrc8?form_factor=desktop
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-creativity/p2qs7232g5?form_factor=desktop
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-twitch/laxhr92stc?form_factor=desktop
+
+https://pagespeed.web.dev/analysis/https-theo-housinger-onrender-com-music/3qn12qeosl?form_factor=desktop
